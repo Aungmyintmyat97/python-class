@@ -1,8 +1,8 @@
-#class Person:
-#	pass
-
-#p = Person()
-#print(p)
+# class Person:
+# 	pass
+#
+# p = Person()
+# print(p)
 
 #Methods
 
@@ -107,15 +107,15 @@
 # Robot.how_many()
 
 class Dog:
-	"""Represent a dog, with a name"""
+	"""Represent a dog, with a name."""
 
 	population = 0
 
 	def __init__(self,name):
-		"""calling the data"""
+		"""calling the data."""
 
 		self.name = name
-		print("(calling{}".format(self.name))
+		print("(calling{})".format(self.name))
 
 		Dog.population += 1
 
@@ -129,15 +129,16 @@ class Dog:
 		if Dog.population == 0:
 			print("{} was the last one.".format(self.name))
 		else:
-			print("They are still {:d} eating".format(self.name))
+			print("They are still {:d} dogs eating food.".format(Dog.population))
 
 	def feeding(self):
 		"""Feeding the dog."""
 
-		print("feeding the food to {} by me.".format(self.name))
+		print("feeding the food to{} by me.".format(self.name))
 
 	@classmethod
 	def how_many(cls):
+		"""Prints the current population."""
 		print("There are {:d} dogs.".format(cls.population))
 
 droid1 = Dog(" Gote Kyar")
@@ -152,9 +153,9 @@ droid3 = Dog(" Aung Nat")
 droid3.feeding()
 Dog.how_many()
 
-print("\n Dog are eating food.\n")
+print("\nDog are eating food.\n")
 
-print("Dog have done eating food. So let's them go")
+print("Dog have done eating food. So let's them go.")
 droid1.go()
 droid2.go()
 droid3.go()
